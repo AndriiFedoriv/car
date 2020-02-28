@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" href="img/tesla-x.jpg">
-        <title>Form of sending messages</title>
+        <title>Car order form</title>
     </head>
     <body>
         <header>
-            <H1>Form of sending messages</H1>
+            <H1>Car order form</H1>
             <nav>
                 <a href="index.html" title="Home">Home</a>
             </nav>
@@ -32,13 +32,9 @@
                     <input type="radio" name="Gender" value="male">Male
                 
                 
-                
-                
                 </label>
                 <label>
                     <input type="radio" name="Gender" value="female">Female
-                
-                
                 
                 
                 </label>
@@ -46,17 +42,41 @@
                     <input type="radio" name="Gender" value="other">Other
                 
                 
-                
-                
                 </label>
                 <br>
+                <label>Choose a car:</label>
+                <select name="cars">
+                    <option value="">--Please choose a car--</option>
+                    <option value="cybertruck">Cybertruck</option>
+                    <option value="tesla-x">Tesla-X</option>
+                </select>
+                <br>
+                <label>Select your car color:</label>
+                <br>
+                <input type="checkbox" name="color_car_red" value="Red">
+                <label>Red</label>
+                <input type="checkbox" name="color_car_black" value="Black">
+                <label>Black</label>
+                <input type="checkbox" name="color_car_green" value="Green">
+                <label>Green</label>
+                <input type="checkbox" name="color_car_yellow" value="Yellow">
+                <label>Yellow</label>
+                <input type="checkbox" name="color_car_orange" value="Orange">
+                <label>Orange</label>
+                <br>
+                <label>Enter a phone number:</label>
+                <br>
+                <input type="tel" name="phone" placeholder="38-123-456-7890" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                <small>Format: 38-123-456-7890</small>
+                <br>
                 <label>
-                    Message:
+                    Message: <br>
                     <textarea name="Message" placeholder="Message"></textarea>
                 </label>
                 <br>
-                <input type="reset">
                 <input type="submit">
+                <input type="reset">
             </form>
         </main>
     </body>
